@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskPilot - Welcome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="btn btn-login" onclick="window.location.href='login.html'">Login</button>
+    <button class="btn btn-register" onclick="window.location.href='register.html'">Register</button>
+    <p class="guest" onclick="guestLogin()">Continue as Guest</p>
+  </div>
+
+  <script>
+    function guestLogin() {
+      // Redirect directly to dashboard
+      window.location.href = "dashboard.php?guest=1";
+    }
+  </script>
+</body>
+</html>

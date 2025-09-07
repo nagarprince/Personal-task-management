@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <a href="index.html" class="back-btn">←</a>
+    <h2>Welcome back! Glad<br>to see you, Again!</h2>
+
+    <!-- Login Form -->
+    <form action="login.php" method="POST">
+      <input name="email" type="email" placeholder="Enter your email" class="input-box" required>
+
+      <div class="password-box">
+        <input name="password" id="password" type="password" placeholder="Enter your password" class="input-box" required>
+        <span class="eye" onclick="togglePassword()">👁</span>
+      </div>
+
+      <button type="submit" class="btn btn-login">Login</button>
+    </form>
+
+    <p class="signup">Don’t have an account? <a href="register.html">Register Now</a></p>
+  </div>
+
+  <script>
+    // Show/Hide password
+    function togglePassword() {
+      let pass = document.getElementById("password");
+      pass.type = (pass.type === "password") ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

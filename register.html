@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <a href="index.html" class="back-btn">←</a>
+    <h2>Create a New Account</h2>
+
+    <form action="register.php" method="POST">
+      <input name="firstname" type="text" placeholder="First Name" class="input-box" required>
+      <input name="lastname" type="text" placeholder="Last Name" class="input-box" required>
+      <input name="email" type="email" placeholder="Email" class="input-box" required>
+      <input name="password" type="password" placeholder="Password" class="input-box" required>
+      <input name="confirmpassword" type="password" placeholder="Confirm Password" class="input-box" required>
+
+      <button type="submit" class="btn btn-login">Sign Up</button>
+    </form>
+
+    <p class="signup">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>
